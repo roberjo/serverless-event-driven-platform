@@ -1,0 +1,35 @@
+{
+  "name": "ml-processor",
+  "version": "1.0.0",
+  "description": "ML processing Lambda function for Event-Driven Microservices Platform with SageMaker and Bedrock integration",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "build": "npm install --production",
+    "package": "zip -r ml-processor.zip . -x '*.test.js' '*.md' 'node_modules/.bin/*'"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.1450.0",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "jest": "^29.6.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "keywords": [
+    "aws",
+    "lambda",
+    "event-driven",
+    "microservices",
+    "machine-learning",
+    "sagemaker",
+    "bedrock",
+    "dynamodb",
+    "sqs",
+    "sns"
+  ],
+  "author": "Platform Team",
+  "license": "MIT"
+}
